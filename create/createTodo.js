@@ -30,7 +30,7 @@ const submitData = () => {
         })
     } else {
         getData()
-        location.href = "/management.html";
+        location.href = "/index.html";
     }
 }
 
