@@ -36,14 +36,14 @@ const handleForm = (e) => {
             })
             if (document.querySelector(".titleInput").value) {
                 localStorage.setItem(get_idNumber, JSON.stringify(obj_idNumber));
-                location.href = "/index.html";
+                location.href = "/yourtodoList/";
             }
             break;
         case e.target.matches(".btn-cancel"):
-            location.href = "/index.html";
+            location.href = "inel.html";
             break;
         case e.target.matches(".btn-delete"):
-            location.href = "/index.html";
+            location.href = "/yourtodoList/";
             delete localStorage[get_idNumber];
             break;
         case e.target.matches(".priority-btn"):

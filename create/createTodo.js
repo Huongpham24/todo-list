@@ -30,7 +30,7 @@ const submitData = () => {
         })
     } else {
         getData()
-        location.href = "/index.html";
+        location.href = "/yourtodoList/";
     }
 }
 
