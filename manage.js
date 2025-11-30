@@ -78,7 +78,7 @@ const createTodo = (info, idNUmber) => {
             e.target.closest('.delete-btn')) {
             return; // Không xử lý nếu click vào checkbox hoặc delete button
         }
-        location.href = "/yourtodoList/editTodo/edit.html";
+        location.href = "/editTodo/edit.html";
         localStorage.setItem("idNumber", e.target.closest(".task-item").id)
     });
 }
