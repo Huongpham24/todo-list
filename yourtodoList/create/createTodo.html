@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Todo</title>
+    <link rel="stylesheet" href="forCreate.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Create New Todo</h1>
+            <p class="subtitle">Fill in the details to create your todo</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label>Title <span class="required">*</span></label>
+                <input type="text" placeholder="Enter todo title" name="titleTask" class="getData" required>
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea class="getData" name="description" placeholder="Add more details about this todo..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Priority <span class="required">*</span></label>
+                <div class="priority-group">
+                    <button type="button" class="priority-btn" name="priority" value="Low">Low</button>
+                    <button type="button" class="priority-btn active getData" name="priority" value="Medium">Medium</button>
+                    <button type="button" class="priority-btn" name="priority" value="High">High</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Due Date</label>
+                    <input type="date" class="getData
+" name="dueDate">
+                </div>
+
+                <div class="form-group">
+                    <label>Due Time</label>
+                    <input type="time" class="getData
+" name="dueTime">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Category</label>
+                <select class="getData" name="category">
+                    <option value="">Select category</option>
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="health">Health</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- <div class="form-group">
+                <label>Tags</label>
+                <div class="tags-input">
+                    <span class="tag">
+                        Important
+                        <span class="tag-remove">×</span>
+                    </span>
+                    <span class="tag">
+                        Urgent
+                        <span class="tag-remove">×</span>
+                    </span>
+                    <input type="text" class="tag-input" placeholder="Add tag...">
+                </div>
+            </div> -->
+
+            <!-- <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="reminder">
+                    <label for="reminder" class="checkbox-label">Set reminder notification</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="repeat">
+                    <label for="repeat" class="checkbox-label">Repeat this todo</label>
+                </div>
+            </div> -->
+
+            <div class="button-group">
+                <a href="/yourtodoList/management.html" style="text-decoration: none; display: inline-block;"><button type="button" class="btn btn-secondary">Cancel</button></a>
+                <button type="button" class="btn btn-primary" id="submit">Create Todo</button>
+                
+            </div>
+        </form>
+    </div>
+    <script src="createTodo.js"></script>
+</body>
+</html>

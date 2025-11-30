@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your To Do</title>
+    <link rel="stylesheet" href="styleforManage.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your To Do</h1>
+        
+        <div class="input-group">
+            <a href="create/createTodo.html" class="add-btn-link">
+                <button class="add-btn">Create Todo</button>
+            </a>
+        </div>
+
+        <div class="task-list">
+        <!-- Empty State - Hiển thị khi chưa có todo -->
+        <div class="empty-state">
+            <div class="empty-icon">📝</div>
+            <div class="empty-title">No tasks yet</div>
+            <div class="empty-description">Click "Create Todo" button above to add your first task and start organizing your day</div>
+        </div>
+        </div>
+
+        <div class="footer">
+            <div class="todo-count">Your remaining todos : <span id="todo-count"></span></div>
+            <div class="quote">"Doing what you love is the cornerstone of having abundance in your life." - Wayne Dyer</div>
+        </div>
+    </div>
+    <script src="manage.js"></script>
+</body>
+</html>
